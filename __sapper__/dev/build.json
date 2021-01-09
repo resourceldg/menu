@@ -1,0 +1,18 @@
+{
+  "bundler": "rollup",
+  "shimport": "1.0.1",
+  "assets": {
+    "main": "client.d1dfd421.js"
+  },
+  "css": {
+    "main": null,
+    "chunks": {
+      "index.svelte": [],
+      "playroom.svelte": [],
+      "discos.svelte": [],
+      "press.svelte": [],
+      "news.svelte": [],
+      "shop.svelte": []
+    }
+  }
+}
