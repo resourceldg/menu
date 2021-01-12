@@ -1,6 +1,8 @@
 <script>
+
   import Carousel from "@beyonk/svelte-carousel";
   import { ChevronLeftIcon, ChevronRightIcon } from "svelte-feather-icons";
+import MiniHero from "../components/MiniHero.svelte";
   import Share from "../components/Share.svelte";
 
   let carousels = [
@@ -62,46 +64,26 @@
   }
 </style>
 
-<div class="demo">
+<div class="demo bg-fixed"  style="background-image: url(beerrr.jpg)">
 
-  <Carousel perPage="1" dots="false">
-    <div class="slide-content">
-      <header style="background-image: url(locura.svg)" />
-      <section>
-        <div>
-          <Share />
-        </div>
-        <div>2</div>
-      </section>
-    </div>
-    <div class="slide-content">
-      <header style="background-image: url(//placekitten.com/180)" />
-      <section>
-        <div>
-          <Share />
-        </div>
-        <div>3</div>
-      </section>
-    </div>
-    <div class="slide-content">
-      <header style="background-image: url(//placekitten.com/320)" />
-      <section>
-        <div>
-          <Share />
-        </div>
-        <div>4</div>
-      </section>
-    </div>
+  
 
-  </Carousel>
+<div class="bg-gray-900">
+  <h3 class="text-lg md:text-3xl">Softweel Technologies</h3>
+
 </div>
-<div>
-  <p class="pb-4">
-    Waladocs is a documentation by Walatic We hope this tool helps you and
-    accompanies you in your work. If you find any error please report it
-    <a class="a" href="https://github.com/resourceldg/waladocs/issue">here</a>
-    You can do better if you fork this project and contribute.
+
+
+</div>
+<h5> Esta es una demostración de un menú digital </h5>
+<h6>Cómo funciona?</h6>
+<p class="pb-4">
+Es simple, este menú estara disponible mediante un <b>link</b> o 
+<b>Etiqueta QR</b> que nosotros te brindaremos para poder colocar en tu comercio, 
+vidriera, mesa o en donde quieras mostrar tu menú o catálogo de productos o servicios.
+ <b>Digitalizá tus productos hoy</b> reduciendo los tiempo de decisión del cliente 
+ cerrando MAS VENTAS en MENOS TIEMPO!!
   </p>
-  <h3>Remember</h3>
-  <h4>" You have the potencial to make amazing things. "</h4>
-</div>
+
+<MiniHero/>
+ 

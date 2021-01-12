@@ -33,7 +33,7 @@
 </style>
 
 <svelte:head>
-  <title>Flor de Monos</title>
+  <title>Demo cervecería</title>
   <meta name="description" content="Breaking Sounds" />
 </svelte:head>
 
@@ -46,9 +46,9 @@
 {/each}
 
 <AppBar class={(i) => i.replace('primary-300', 'dark-600')}>
-  <a href="." class="px-2 md:px-8 flex items-center">
-    <img src="/logo.svg" alt="Rock Band logo" width="54" />
-    <h6 class="pl-3 text-white tracking-widest font-thin text-lg">Flor de Monos</h6>
+  <a href="https://ofertaweb.com.ar/?utm_source=demo1&utm_medium=btn%20logo&utm_campaign=getting%20started" class="px-2 md:px-8 flex deg items-center">
+    <img src="/beer-solid.svg" alt="Rock Band logo" width="40" />
+    <h6 class="pl-3 tracking-widest font-thin text-lg">La Cervecería</h6>
   </a>
   <Spacer />
   <Tabs navigation items={topMenu} bind:selected={path} />
@@ -96,25 +96,33 @@
     <h6
       class="px-3 ml-1 pb-2 pt-8 text-sm text-gray-900 font-light
       dark:text-gray-100">
-      Moneando
+      Menú
     </h6>
     <List items={navMenu}>
       <span slot="item" let:item class="cursor-pointer bg-nav">
         
-        {#if item.to === 'shop'}
+        {#if item.to === 'platos'}
           <hr class="mt-4" />
           <h6
             class="px-3 ml-1 pb-2 pt-8 text-sm text-gray-900 font-light
             dark:text-gray-100">
-            Tienda
+            Delicias culinarias
           </h6>
         {/if}
-        {#if item.to === 'press'}
+        {#if item.to === 'bebidas'}
           <hr class="mt-4" />
           <h6
             class="px-3 ml-1 pb-2 pt-8 text-sm text-gray-900 font-light
             dark:text-gray-100">
-           Contacto
+           Cervezas y Tragos
+          </h6>
+        {/if}
+        {#if item.to === 'promo'}
+          <hr class="mt-4" />
+          <h6
+            class="px-3 ml-1 pb-2 pt-8 text-sm text-gray-900 font-light
+            dark:text-gray-100">
+           Promociones
           </h6>
         {/if}
 
