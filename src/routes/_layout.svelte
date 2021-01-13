@@ -75,10 +75,10 @@
       text
       on:click={() => showNav.set(!$showNav)} />
   </div>
-  <a href="https://github.com/resourceldg/waladocs" class="px-4 github">
+  <a href="https://instagram.com/softweel" class="px-4 github">
     <img src="/instagram.svg" alt="ig rockband" width="50" height="50" />
   </a>
-  <a href="https://github.com/resourceldg/waladocs" class="px-4 github">
+  <a href="https://facebook.com/softweel" class="px-4 github">
     <img src="/face.svg" alt="face rockband" width="50" height="50" />
   </a>
 
